@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!--by HMJE Coaders YH Song & YJ Lim-->
+<html>
+    <head>
+        <title>HunMinJeongEum JINProject</title> 
+    </head>
+    <body text="black" background="WALL3.jpg" bgproperties="fixed">
+        <a href="file:///C:/Users/SHC/Desktop/%ED%9B%88%EB%AF%BC%EC%A0%95%EC%9D%8C/Untitled-1.html"><img src="JIN1.png" width="5%" height="5%"/>
+        <br>
+        <br>
+        <a href="https://www.apple.com/"><img src="BOARD.png"style="float: right;  width:250px; height:250px; border-radius: 1.5em; margin-right: 300px; margin-top: 40px;"/></a>
+        <body onload="printClock()">
+            <div style="border:1px solid #dedede00; width:500px; height:250px; line-height:250px; color:#ffffff; font-size:100px; text-align:center; float: right; margin-right: 40px; margin-top: 40px;" id="clock"></div>
+            <script>
+    
+                function printClock() {
+                    
+                    var clock = document.getElementById("clock");            // 출력할 장소 선택
+                    var currentDate = new Date();                                     // 현재시간
+                    var calendar = currentDate.getFullYear() + "-" + (currentDate.getMonth()+1) + "-" + currentDate.getDate() // 현재 날짜
+                    var amPm = 'AM'; // 초기값 AM
+                    var currentHours = addZeros(currentDate.getHours(),2); 
+                    var currentMinute = addZeros(currentDate.getMinutes() ,2);
+                    var currentSeconds =  addZeros(currentDate.getSeconds(),2);
+                    
+                    if(currentHours >= 12){ // 시간이 12보다 클 때 PM으로 세팅, 12를 빼줌
+                        amPm = 'PM';
+                        currentHours = addZeros(currentHours - 12,2);
+                    }
+                
+                    if(currentSeconds >= 50){// 50초 이상일 때 색을 변환해 준다.
+                       currentSeconds = '<span style="color:#F5DF4D;">'+currentSeconds+'</span>'
+                    }
+                    clock.innerHTML = currentHours+":"+currentMinute+":"+currentSeconds +" <span style='font-size:50px;'>"+ amPm+"</span>"; //날짜를 출력해 줌
+                    
+                    setTimeout("printClock()",1000);         // 1초마다 printClock() 함수 호출
+                }
+                
+                function addZeros(num, digit) { // 자릿수 맞춰주기
+                      var zero = '';
+                      num = num.toString();
+                      if (num.length < digit) {
+                        for (i = 0; i < digit - num.length; i++) {
+                          zero += '0';
+                        }
+                      }
+                      return zero + num;
+                }
+            </script>
+        <a href="https://www.apple.com/"><img src="NEWS.png"style="float: right;  width:250px; height:250px; border-radius: 1.5em; margin-right: 40px; margin-top: 40px;"/></a>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <a href="https://www.apple.com/"><img src="SCHOOL.png"style="float: left;  width:250px; height:250px; border-radius: 1.5em; margin-left: 300px; margin-top: 80px;"/></a>
+        <a href="https://www.apple.com/"><img src="Q&A.png"style="float: left;  width:250px; height:250px; border-radius: 1.5em; margin-left: 40px; margin-top: 80px"/></a>
+        <a href="https://www.apple.com/"><img src="BG.png"style="float: left;  width:250px; height:250px; border-radius: 1.5em; margin-left: 40px; margin-top: 80px"/></a>
+        <a href="https://www.apple.com/"><img src="DATA.png"style="float: left;  width:250px; height:250px; border-radius: 1.5em; margin-left: 40px; margin-top: 80px"/></a>
+        <!--<div class='rounded' align="center">중요소식</div>-->
+    </body>
+</html>
