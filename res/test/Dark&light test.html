@@ -10,38 +10,20 @@
             } 
         </style>
     </head>
-    <body  text="black" background="../Background/macos-big-sur-light 6016x6016-1495.jpg" bgproperties="fixed" align= center>
+    <body  text="white" background="https://raw.githubusercontent.com/hunminjeungum/JIN1/main/res/Background/macos-big-sur-light%206016x6016-1495.jpg" bgproperties="fixed" align= center>
         You reached end of our site.....
         and
         we call it
         <h1>404!!!</h1>
+        Enable DarkMode>
+        <input id="Dark" type="checkbox" onclick='getCheckboxValue(event)'>
         <script>
-            var Dark = "18";  
-            var light = "6";   
-         
-            var now = new Date();   //현재시간
-         
-            year = now.getFullYear();   //현재시간 중 4자리 연도
-            month = now.getMonth()+1;   //현재시간 중 달. 달은 0부터 시작하기 때문에 +1 
-            if((month+"").length < 2){
-                month="0"+month;   //달의 숫자가 1자리면 앞에 0을 붙임.
-            }
-            date = now.getDate();      //현재 시간 중 날짜.
-            if((date+"").length < 2){
-                date="0"+date;      
-            }
-            hour = now.getHours();   //현재 시간 중 시간.
-            if((hour+"").length < 2){
-            hour="0"+hour;      
-            }
-            // 시간비교
-            if ((eval(hour) > eval(Dark)) && ((eval(hour) < eval(light))))  {  
-                themeChange();
-            }
-        </script>
-        <script type="text/javascript">
-            themeChange();{
-                document.body.style.background = "url('../Background/macos-big-sur-dark 6016x6016-1432.jpg') no-repeat 0 0";
+            function getCheckboxValue(event)  {
+                if(event.target.checked)  {
+                    document.body.style.backgroundImage ="url('macos-big-sur-dark 6016x6016-1432.JPG')";
+                }else {
+                    document.body.style.backgroundImage ="url('https://raw.githubusercontent.com/hunminjeungum/JIN1/main/res/Background/macos-big-sur-light%206016x6016-1495.jpg')";
+                }
             }
         </script>
     </body>
