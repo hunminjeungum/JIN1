@@ -1,5 +1,7 @@
-<html><head>
-    </head><body background="https://mblogthumb-phinf.pstatic.net/MjAxOTA2MDRfODkg/MDAxNTU5NjMwNjk1MjEz.I6ZUTPqD4MuRPx1ehSAjugyZH1k8orkiaYX9Y6CZJ5sg.RWvxBTinZJjLy8_9diHGJLPaJchZJY2jcxKqRTDuQ1cg.JPEG.13cafe/26.jpg?type=w800" bgproperties="fixed"><a href="../../index.html"><img src="back.png" width="5%" height="5%"></a>
+<html>
+  <head>
+    </head>
+    <body background="https://mblogthumb-phinf.pstatic.net/MjAxOTA2MDRfODkg/MDAxNTU5NjMwNjk1MjEz.I6ZUTPqD4MuRPx1ehSAjugyZH1k8orkiaYX9Y6CZJ5sg.RWvxBTinZJjLy8_9diHGJLPaJchZJY2jcxKqRTDuQ1cg.JPEG.13cafe/26.jpg?type=w800" bgproperties="fixed"><a href="../../index.html"><img src="back.png" width="5%" height="5%"></a>
     <title>1-2반 시간표</title>
     <h1>1-2반 시간표</h1>
     <hr width=50% color=black>
@@ -39,7 +41,7 @@
         <td class="tg-0lax">1(8:50)</td>
         <td class="tg-buh4"><a href="https://zoom.us/j/5342357939?pwd=dEcwTjNKUVp4NElMTXVNTEQ5QlZHZz09" target="_blank" rel="noopener noreferrer">수학</a></td>
         <td class="tg-0lax"><a href="https://zoom.us/j/5867659216?pwd=UkFIRjBYalFmWnZIRkhWdU56bUFoUT09" target="_blank" rel="noopener noreferrer">체육</a></td>
-        <td class="tg-buh4">주선</td>
+        <td class="tg-buh4"><span class="tg-buh4" onclick="modal()">주선</span></td>
         <td class="tg-0lax"><a href="https://sel2.ebsoc.co.kr/student/home" target="_blank" rel="noopener noreferrer">음악</a><br></td>
         <td class="tg-buh4"><a href="https://zoom.us/j/5073178308?pwd=OGNtc2k3UitEcUZNU01pSGV6UXgyZz09https://zoom.us/j/5073178308?pwd=OGNtc2k3UitEcUZNU01pSGV6UXgyZz09" target="_blank" rel="noopener noreferrer">영어</a></td>
       </tr>
@@ -47,7 +49,7 @@
         <td class="tg-0lax">2(9:35)</td>
         <td class="tg-buh4"><a href="https://zoom.us/j/5867659216?pwd=UkFIRjBYalFmWnZIRkhWdU56bUFoUT09" target="_blank" rel="noopener noreferrer">체육</a></td>
         <td class="tg-0lax"><a href="https://zoom.us/j/5836061833?pwd=Z0xpMitMWDZObTlab0g5TlpCeklxdz09" target="_blank" rel="noopener noreferrer">과학a</a><br></td>
-        <td class="tg-buh4">주선</td>
+        <td class="tg-buh4"><span class="tg-buh4" onclick="modal()">주선</span></td>
         <td class="tg-0lax"><a href="https://sel2.ebsoc.co.kr/student/home" target="_blank" rel="noopener noreferrer">음악</a></td>
         <td class="tg-buh4"><a href="https://sel2.ebsoc.co.kr/student/home" target="_blank" rel="noopener noreferrer">국어</a></td>
       </tr>
@@ -95,4 +97,87 @@
     </table>
 
     </center>
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+
+      <style>
+          /* The Modal (background) */
+          .modal {
+              display: none; /* Hidden by default */
+              position: fixed; /* Stay in place */
+              z-index: 1; /* Sit on top */
+              left: 0;
+              top: 0;
+              width: 100%; /* Full width */
+              height: 100%; /* Full height */
+              overflow: auto; /* Enable scroll if needed */
+              background-color: rgb(0,0,0); /* Fallback color */
+              background-color: rgba(155, 155, 155, 0.4); /* Black w/ opacity */
+              backdrop-filter: blur(0px);
+              transition-property: backdrop-filter;
+              transition: all ease 1.5s;
+          }
+          .modal:hover {
+              backdrop-filter: blur(4px);
+          }
+          /* Modal Content/Box */
+          .modal-content {
+              background-color: #fefefe;
+              opacity: 20%;
+              margin: 5% auto; /* 15% from the top and centered */
+              padding: 20px;
+              border: 0px solid #888;
+              width: 40%; /* Could be more or less, depending on screen size */
+              border-radius: 30px;
+              transition-property: opacity;
+              transition:all ease 1.5s;
+          }
+          .modal-content:hover {
+              opacity: 100%;
+          }
+          
+    
+      </style>
+    
+    
+    
+      <!-- The Modal -->
+      <div id="myModal" class="modal">
+      
+        <!-- Modal content -->
+        <div class="modal-content">
+                  <p style="text-align: center;"><span style="font-size: 14pt;"><b><span style="font-size: 24pt;">주선</span></b></span></p>
+                  <p style="text-align: center; line-height: 1.5;"><br /></p>
+                  <p style="text-align: center; line-height: 1.5;"><span style="font-size: 14pt;">나도시민 외교관: <a href="https://zoom.us/j/3834993811?pwd=QnBpd2ZkUXRzc2RnL3NQS2JXczA0UT09">줌 입장</a>  ID: 383 499 3811  PW: 201201</span></p>
+                  <p style="text-align: center; line-height: 1.5;"><b><span style="color: rgb(255, 0, 0); font-size: 14pt;">10:00 - 18:00 까지</span></b></p>
+                  <p style="text-align: center; line-height: 1.5;"><span style="font-size: 14pt;">사이트 사용이 중지 됩니다.</span></p>
+                  <p style="text-align: center; line-height: 1.5;"><span style="font-size: 14pt;"><br /></span></p>
+                  <p style="text-align: center; line-height: 1.5;"><span style="font-size: 14pt;">이용에 불편을 드린 점 양해를 </span></p>
+                  <p style="text-align: center; line-height: 1.5;"><span style="font-size: 14pt;">부탁드립니다.</span></p>
+                  <p style="text-align: center; line-height: 1.5;"><br /></p>
+                  <p><br /></p>
+              <div style="cursor:pointer;background-color:#DDDDDD;text-align: center;padding-bottom: 10px;padding-top: 10px; border-radius: 30px;" onClick="close_pop();">
+                  <span class="pop_bt" style="font-size: 13pt;" >
+                       닫기
+                  </span>
+              </div>
+        </div>
+      
+      </div>
+          <!--End Modal-->
+    
+    
+      <script type="text/javascript">
+        function modal(){
+        
+            jQuery(document).ready(function() {
+                    $('#myModal').show();
+            });
+        }
+        //팝업 Close 기능
+        function close_pop(flag) {
+             $('#myModal').hide();
+        };
+        
+      </script>
+    
 </body>
